@@ -1,6 +1,6 @@
 {
   "name": "@justcodej/template-react-component-library",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a simple filemanage",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
