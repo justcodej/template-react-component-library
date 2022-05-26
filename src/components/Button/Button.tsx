@@ -1,11 +1,16 @@
-import React from "react";
+import React, { ReactNode, Component } from "react";
+import './Button.css'
 
 export interface ButtonProps {
-  label: string;
+  children?: ReactNode;
 }
 
-const Button = (props: ButtonProps) => {
-  return <button>{props.label}</button>;
-};
+class Button extends Component<ButtonProps> {
+  render () {
+    return (
+      <button>{ this.props.children }</button>
+    )
+  }
+}
 
 export default Button;
