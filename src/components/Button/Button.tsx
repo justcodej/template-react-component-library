@@ -4,12 +4,16 @@ import './Button.css'
 export interface ButtonProps {
   className?: string;
   children?: ReactNode;
+  style?: React.CSSProperties;
+  ref?: React.RefObject<string>;
 }
 
-const Button: FC<ButtonProps> = ({ children }) => {
+const Button: FC<ButtonProps> = ({ className, children }) => {
   return (
-    <button>{children}</button>
-  )
-}
+    <div>
+      <button className={className}>{ children }</button>
+    </div>
+  );
+};
 
 export default Button;
