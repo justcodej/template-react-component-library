@@ -4,6 +4,7 @@ import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import postcss from "rollup-plugin-postcss";
 import clear from 'rollup-plugin-clear'
+import { terser } from "rollup-plugin-terser";
 
 const packageJson = require("./package.json");
 
@@ -29,7 +30,8 @@ export default [
       resolve(),
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
-      postcss(), 
+      postcss(),
+      terser(),
     ],
   },
   {
