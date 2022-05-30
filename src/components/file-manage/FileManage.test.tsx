@@ -1,9 +1,9 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import FileMange from "./FileManage";
+import KpFileMange from "./file-manage";
 
 describe("KpButton", () => {
   test("renders the KpButton component", () => {
-    render(<FileMange>Hello world!</FileMange>);
+    render(<KpFileMange>Hello world!</KpFileMange>);
   });
 });

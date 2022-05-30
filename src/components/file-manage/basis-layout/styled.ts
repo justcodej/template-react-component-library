@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
-export const StyledLayouts = styled.button`
+export const Container = styled.div`
   font-size: 30px;
 `

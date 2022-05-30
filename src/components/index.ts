@@ -1,1 +1,1 @@
-export { default as FileManage } from './FileManage';
+export { default as KpFileManage } from './file-manage';
