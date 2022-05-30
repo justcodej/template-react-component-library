@@ -1,1 +1,0 @@
-export { default as KpFileManage } from './file-manage';
